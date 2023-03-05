@@ -281,3 +281,9 @@ input {
   height: 764px;
   width: 396px;
 }
+
+@media screen and (min-width: 414px) {
+  .nav-bar li {
+    padding: 0px 16px;
+  }
+}
