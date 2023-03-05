@@ -282,7 +282,7 @@ input {
   width: 396px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (min-width: 414px) {
   .nav-btn {
     height: 32px;
     width: 96pxpx;
