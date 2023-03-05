@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  width: fit-content;
+  width: auto;
   background-color: var(--bg-color);
 
   overflow: hidden;
