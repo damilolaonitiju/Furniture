@@ -19,6 +19,7 @@ body {
 }
 
 .container {
+  width: fit-content;
   background-color: var(--bg-color);
 
   overflow: hidden;
@@ -280,23 +281,4 @@ input {
 .last-img img {
   height: 764px;
   width: 396px;
-}
-
-@media screen and (max-width: 414px) {
-  .nav-btn {
-    height: 32px;
-    width: 96pxpx;
-    border-radius: 8px;
-    margin: 0px 4px;
-  }
-
-  .tiny-p,
-  .big-p {
-    margin: 4px 0;
-    color: var(--text-color);
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 18px;
-    width: 300px;
-  }
 }
