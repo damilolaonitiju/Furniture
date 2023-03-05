@@ -286,4 +286,11 @@ input {
   .nav-bar li {
     padding: 0px 16px;
   }
+
+  .nav-btn {
+    height: 24px;
+    width: 104px;
+    border-radius: 8px;
+    margin: 0px 4px;
+  }
 }
