@@ -13,7 +13,8 @@ fetch("https://fakestoreapi.com/products")
     alt="img" class="images">
     <p class='description'>${values.description}</p>
     <p class="category">${values.category}</p>
-    <p class="price" style="font-size:1.5rem">${values.price}</p>
+    <p class="price" style="font-size:1.5rem" data-price="${values.price}">${values.price}</p>
+
 </div>`;
     });
 
@@ -32,10 +33,11 @@ function getExchangeRate(targetCurrency) {
 }
 
 // Update prices based on selected currency
+// Update prices based on selected currency
 function updatePrices(targetCurrency) {
   const prices = document.querySelectorAll(".price");
   prices.forEach((price) => {
-    const currentPrice = price.textContent;
+    const currentPrice = parseFloat(price.dataset.price);
     if (!isNaN(currentPrice)) {
       getExchangeRate(targetCurrency).then((rate) => {
         const convertedPrice = (currentPrice * rate).toFixed(2);
