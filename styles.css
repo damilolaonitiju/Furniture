@@ -417,3 +417,166 @@ select,
 option {
   padding: 8px;
 }
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 675px) {
+  * {
+    border-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    --bg-color: #fff;
+    --nav-bar-color: #848484;
+    --primary-color: #778b57;
+    --secondary-color: #abc87d4f;
+    --heading-color: #101415;
+    --text-color: #52544f;
+    --accent-color: #9ae128;
+  }
+
+  body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  .container-nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .divider {
+    height: 80px;
+    width: inherit;
+    background-color: white;
+    display: flex;
+  }
+
+  .logo {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .logo img {
+    height: 44px;
+  }
+
+  .nav-bar {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 70px;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color) !important;
+    padding: auto 0 0 0;
+  }
+
+  .nav-bar ul {
+    display: none;
+  }
+
+  .nav-btn {
+    height: 44px;
+    width: 122px;
+    border-radius: 10px;
+    margin: 0px 8px;
+    font-size: 16px;
+  }
+
+  .nav-btn a {
+    text-decoration: none;
+  }
+
+  .login {
+    background: var(--bg-color);
+    border: 1.5px solid var(--primary-color);
+  }
+
+  .login a {
+    color: var(--primary-color);
+  }
+
+  .register {
+    background: var(--primary-color);
+    color: var(--bg-color);
+  }
+
+  .register a {
+    color: var(--bg-color);
+  }
+
+  button:hover {
+    background: #a2c36e;
+  }
+
+  button:active {
+    background: #1a2607;
+  }
+
+  /*body section*/
+
+  .main-btn {
+    margin: 8px 0;
+    height: 65px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 6px 16px 6px 16px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+  }
+
+  .hero {
+    height: 760px;
+    padding: 160px 16px 0 16px;
+    background: var(--secondary-color);
+  }
+
+  .tiny-p,
+  .big-p {
+    margin: 8px 0;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  h2 {
+    color: var(--heading-color);
+    font-family: Noto Serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    text-align: center;
+  }
+
+  .hero-pics {
+    display: none;
+  }
+
+  .admin-section {
+    padding: 80px 16px 0 16px;
+  }
+}
