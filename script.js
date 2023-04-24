@@ -36,7 +36,7 @@ fetch("https://fakestoreapi.com/products")
 
 // Get exchange rate from API
 function getExchangeRate(targetCurrency) {
-  // const url = `https://v6.exchangerate-api.com/v6/b9dd02de2570891bbf605d4a/latest/USD`;
+const url = `https://v6.exchangerate-api.com/v6/b9dd02de2570891bbf605d4a/latest/USD`;
   return fetch(url)
     .then((response) => response.json())
     .then((data) => data.conversion_rates[targetCurrency]);
