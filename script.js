@@ -23,7 +23,7 @@ fetch("https://fakestoreapi.com/products")
     <img src=${values.image}
     alt="img" class="images">
     <p class="category">${values.category}</p>
-    <p class="price" style="font-size:1.5rem" data-price="${values.price}">${values.price}</p>
+    <p class="price" style="font-size:1.5rem" data-price="'$'+${values.price}">${values.price}</p>
 
 </div>`;
     });
